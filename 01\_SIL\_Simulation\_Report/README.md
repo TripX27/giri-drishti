@@ -42,9 +42,5 @@ python sil_control_simulation.py
 
 ```
 
-4. Click **`Commit changes`** to save.
-
 ---
-
-Once Folder 1 is populated, let me know when you're ready for **Step 4: Populating Folder 2 (`02_Standard_Compliance_Matrix`)**!
 ```
