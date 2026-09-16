@@ -1,0 +1,46 @@
+=== 1. SYMBOLIC EULER-LAGRANGE DERIVATION ===
+Verified Euler-Lagrange Equation:
+                 2                     
+   d            d                      
+Bv⋅──(θ(t)) + J⋅───(θ(t)) = -dₜₒₜₐₗ + u
+   dt             2                    
+                dt                     
+
+Solved for Acceleration theta_ddot(t):
+                 d                    
+ 2          - Bv⋅──(θ(t)) - dₜₒₜₐₗ + u
+d                dt                   
+───(θ(t)) = ──────────────────────────
+  2                     J             
+dt                                    
+
+=== 2. GHOESO OBSERVER EIGENVALUE VERIFICATION ===
+Observer Error Matrix A_e:
+⎡-3⋅ωₒ   1  0⎤
+⎢            ⎥
+⎢     2      ⎥
+⎢-3⋅ωₒ   0  1⎥
+⎢            ⎥
+⎢    3       ⎥
+⎣ -ωₒ    0  0⎦
+
+Characteristic Equation Eigenvalues:
+  Lambda = -omega_o (Multiplicity: 3)
+CONFIRMED: All 3 observer error poles reside strictly at -omega_o.
+
+=== 3. PASCHEN DIELECTRIC BREAKDOWN DERIVATION ===
+Paschen Breakdown Formula V_b(pd):
+           B⋅pd            
+───────────────────────────
+               ⎛   ⎛    1⎞⎞
+log(A⋅pd) - log⎜log⎜1 + ─⎟⎟
+               ⎝   ⎝    γ⎠⎠
+
+Derivative d(Vb)/d(pd) = 0 Minimum Point (pd)_min:
+   ⎛       ℯ⎞
+   ⎜       ─⎟
+   ⎜       A⎟
+   ⎜⎛γ + 1⎞ ⎟
+log⎜⎜─────⎟ ⎟
+   ⎝⎝  γ  ⎠ ⎠
+
